@@ -1,0 +1,123 @@
+/* Variables */
+
+:root {
+--basic-black: #000000;
+--basic-white: #FFFFFF;
+--light-blue:  #81B3D3;
+--extra-dark:  #333333;
+--grey: #EEE;
+--basic-brown: #766458;
+--extra-light-dark:#231F20;
+--extra-blue: #81B3D2;
+}
+
+body {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  }
+
+/* Main navigation */
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+  }
+
+.site-navigation a:link{}
+
+.site-navigation a:hover {
+   color: var(--extra-blue);
+}
+
+.site-navigation a:focus {}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+    /*Main*/
+
+.title--main{
+line-height: 26px;
+}
+
+.text--main {
+line-height: 26px;
+}
+
+.title{
+font-size: 21px;
+line-height: 21px;
+}
+
+.text {
+font-size: 14px;
+line-height: 21px;
+}
+
+.white{
+ color: var(--basic-white)
+}
+
+.black {
+  color: var(--basic-black)
+}
+
+.features-item--big{
+background-color: var(--extra-blue);
+}
+
+.features-list--inner{
+background-color: var(--basic-white);
+}
+
+.features-item--grey{
+ background-color: var(--grey);
+}
+
+.features-list {
+  list-style: none;
+}
+
+/* appointment */
+
+.appointment-title{
+  font-size: 30px;
+  line-height: 24px;
+}
+
+
+/* Main footer */
+
+
+.main-footer a{
+  text-decoration: none;
+  color: var(--basic-black);
+ line-height: 26px;
+}
+
+.footer-social {
+  list-style: none;
+  }
+
+  .social-button:link{
+    background: var(--extra-blue);
+  }
+
+ .social-button:hover{
+    background: #669EC0;
+  }
+
+ .social-button:active{
+    background: #5496BD;
+  }
