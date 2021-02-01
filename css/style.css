@@ -96,6 +96,10 @@ background-color: var(--basic-white);
   line-height: 24px;
 }
 
+.appointment-text{
+  font-size: 14px;
+  line-height: 24px;
+}
 
 /* Main footer */
 
@@ -103,7 +107,11 @@ background-color: var(--basic-white);
 .main-footer a{
   text-decoration: none;
   color: var(--basic-black);
- line-height: 26px;
+  line-height: 26px;
+}
+
+.footer-contacts{
+  font-weight: bold;
 }
 
 .footer-social {
@@ -120,4 +128,15 @@ background-color: var(--basic-white);
 
  .social-button:active{
     background: #5496BD;
+  }
+
+  .footer-copyright a:link{
+    color: #231F20;
+  }
+  .footer-copyright a:hover{
+    color:var(--extra-blue)
+  }
+
+  .footer-copyright a:active{
+  color: #BDBBBC;
   }
