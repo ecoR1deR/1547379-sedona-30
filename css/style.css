@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: var(--basic-black);
   }
@@ -25,26 +25,32 @@ body {
   font-weight: bold;
 }
 
-.site-navigation a {
-  text-decoration: none;
-  color: var(--basic-black);
-}
-
 .site-navigation {
-  list-style: none;
-  }
-
-.site-navigation a:link{
-  color:var(--basic-black)
+list-style: none;
 }
 
-.site-navigation a:hover {
-   color: var(--extra-blue);
+.navigation-link {
+  text-decoration: none;
 }
 
-.site-navigation a:active {
+.navigation-link:link{
+  color: var(--basic-black)
+}
+
+.navigation-link:visited {
+color: var(--basic-black);
+opacity: 0.3;
+}
+
+.navigation-link:hover {
+  color: var(--extra-blue);
+}
+
+.navigation-link:active {
+  color: var(--basic-black);
   opacity: 0.3;
 }
+
     /*Main*/
 
 .title--main{
@@ -122,6 +128,10 @@ background-color: var(--basic-white);
     background: var(--extra-blue);
   }
 
+.social-button:visited {
+  background: #5496BD;
+  }
+
  .social-button:hover{
     background: #669EC0;
   }
@@ -130,14 +140,18 @@ background-color: var(--basic-white);
     background: #5496BD;
   }
 
-  .footer-copyright a:link{
+  .footer-copyright-link:link{
+    color: #231F20;
+  }
+  .footer-copyright-link:active{
+    color: #BDBBBC;
+    }
+
+  .footer-copyright-link:visited {
     color: #231F20;
   }
 
-  .footer-copyright a:hover{
+  .footer-copyright-link:hover{
     color:var(--extra-blue)
   }
 
-  .footer-copyright a:active{
-  color: #BDBBBC;
-  }
