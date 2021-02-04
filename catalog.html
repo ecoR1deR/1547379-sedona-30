@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="img/favicon/32.ico">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="catalog.html">
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-navigation-logo" href="catalog.html">
         <img src="img/img/logo.svg" width="138" height="70" alt="Логотип сайта Sedona">
       </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и Видео</a></li>
-        <li><a href="#">Карта Штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+      <ul class="site-navigation">
+        <li><a class="navigation-link" href="#">Информация</a></li>
+        <li><a class="navigation-link" href="#">Фото и Видео</a></li>
+        <li><a class="navigation-link" href="#">Карта Штата</a></li>
+        <li><a class="navigation-link" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -59,88 +62,89 @@
       </form>
     </section>-->
   <section>
-    <section>
-      <strong>Найдено:3</strong>
+    <section class="main-sorting">
+      <strong class="sorting-title">Найдено:3</strong>
       <h1>Список отелей</h1>
-      <h2>Сортировка:</h2>
-      <ul>
-        <li><a>По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
-        <li><a href="#">Стрелочка вверх</a></li>
-        <li><a href="#">Стрелочка вниз</a></li>
+      <h2 class="sorting">Сортировка:</h2>
+      <ul class="sorting">
+        <li><a class="sorting-link sorting-active">По цене</a></li>
+        <li><a class="sorting-link" href="#">По типу</a></li>
+        <li><a class="sorting-link" href="#">По рейтингу</a></li>
+        <li><a class="sorting-link" href="#">Стрелочка вверх</a></li>
+        <li><a class="sorting-link" href="#">Стрелочка вниз</a></li>
       </ul>
     </section>
-    <ul>
+    <ul class="main-travel">
       <li>
         <a href="#"><img src="img/catalog/Layer 21.jpg" width="135" height="90" alt="Гостиница Amara Resot & Spa"></a>
-        <a href="#">
-          <h3>Amara Resot & Spa</h3>
+        <a class="title-link" href="#">
+          <h3 class="travel-title">Amara Resot & Spa</h3>
         </a>
-        <p>Гостиница</p>
-        <p>от 4000 Р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+        <p class="text">Гостиница</p>
+        <p class="text">от 4000 Р.</p>
+        <p class="text">
+          <a class="button-1" href="#">Подробнее</a>
+          <a class="button-2" href="#">Забронировать</a>
         </p>
       </li>
       <li>рейтинг</li>
       <li>рейтинг</li>
       <li>рейтинг</li>
       <li>рейтинг</li>
-      <p>рейтинг:8,5</p>
+      <p class="text text-frame">рейтинг:8,5</p>
       <li>
         <a href="#"><img src="img/catalog/Layer 89 copy.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"></a>
-        <a href="#">
-          <h3>Desert Quail Inn</h3>
+        <a class="title-link" href="#">
+          <h3 class="travel-title">Desert Quail Inn</h3>
         </a>
-        <p>Мотель</p>
-        <p>от 3000 Р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+        <p class="text">Мотель</p>
+        <p class="text">от 3000 Р.</p>
+        <p class="text">
+          <a class="button-1" href="#">Подробнее</a>
+          <a class="button-2" href="#">Забронировать</a>
         </p>
       </li>
       <li>рейтинг</li>
       <li>рейтинг</li>
       <li>рейтинг</li>
-      <p>рейтинг:8,9</p>
+      <p class="text text-frame">рейтинг:8,9</p>
       <li>
         <a href="#"><img src="img/catalog/Rectangle.jpg" width="135" height="90"
             alt="Апартаменты Villas at poco diablo"></a>
-        <a href="#">
-          <h3>Villas at poco diablo</h3>
+        <a class="title-link" href="#">
+          <h3 class="travel-title">Villas at poco diablo</h3>
         </a>
-        <p>Апартаменты</p>
-        <p>от 2000 Р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+        <p class="text">Апартаменты</p>
+        <p class="text">от 2000 Р.</p>
+        <p class="text">
+          <a class="button-1" href="#">Подробнее</a>
+          <a class="button-2" href="#">Забронировать</a>
         </p>
       </li>
       <li>рейтинг</li>
       <li>рейтинг</li>
-      <p>рейтинг:9,2</p>
+      <p class="text text-frame">рейтинг:9,2</p>
     </ul>
   </section>
   </main>
-  <footer>
-    <address>
-      <a href="#">#VISITSEDONA</a>
-      <p><a href="#">ТЕЛ:+7(495) 666-01-66</a></p>
+  <footer class="main-footer">
+    <address class="footer-contacts title">
+      <a class="footer-address" href="#">#VISITSEDONA</a>
+      <p><a class="footer-phone" href="#">ТЕЛ:+7(495) 666-01-66</a></p>
     </address>
-    <ul>
+    <ul class="footer-social">
       <li>
-        <a href="#">Вконтакте</a>
+        <a class="social-button" href="#">Вконтакте</a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">Инстаграм</a>
+        <a class="social-button" href="#">Инстаграм</a>
       </li>
     </ul>
-    <p>WEBSITE BY <a href="https://htmlacademy.ru">HTML Academy</a></p>
+    <p class="footer-copyright  text">WEBSITE BY <a class="footer-copyright-link" href="https://htmlacademy.ru">HTML
+        Academy</a></p>
   </footer>
 </body>
 
