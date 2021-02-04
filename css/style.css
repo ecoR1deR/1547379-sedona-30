@@ -15,7 +15,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: var(--basic-black);
-  }
+}
 
 /* Main navigation */
 
@@ -155,3 +155,121 @@ background-color: var(--basic-white);
     color:var(--extra-blue)
   }
 
+ /*Catalog*/
+
+ .main-travel {
+   list-style: none;
+   }
+
+ .travel-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting {
+ font-size: 12px;
+ line-height: 18px;
+ list-style: none;
+ }
+
+.sorting-link{
+ text-decoration: none;
+ color: var(--basic-black);
+ opacity: 0.3;
+ }
+
+.sorting-link:link {
+color: var(--basic-black);
+opacity: 0.3;
+}
+
+.sorting-link:hover {
+color: var(--extra-blue);
+}
+
+.sorting-link:active {
+  color: var(--basic-black);
+}
+
+.sorting-active {
+  color: var(--extra-blue)
+}
+
+.button-1 {
+  color: var(--basic-white);
+  background-color: var(--extra-blue);
+  padding: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+.button-2 {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
+  text-decoration: none;
+}
+
+.text-frame {
+  color: #666666;
+  background: #F2F2F2;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+}
+
+.button-1:link{
+  background: #81B3D2;
+}
+
+.button-1:visited {
+  background: #81B3D2;
+}
+
+.button-1:hover {
+  background: #669EC0;
+}
+
+.button-1:active {
+  background: #5496BD;
+}
+
+.button-2:link{
+  background: #766357;
+}
+
+.button-2:visited {
+  background: #766357;
+}
+
+.button-2:hover {
+  background: #604E43;
+}
+
+.button-2:active {
+  background: #503E33;
+}
+
+.title-link {
+  text-decoration: none;
+}
+
+.title-link:link{
+  color: var(--basic-black)
+}
+
+.title-link:visited {
+color: var(--basic-black);
+}
+
+.title-link:hover {
+  color: var(--extra-blue);
+}
+
+.title-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
