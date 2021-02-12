@@ -15,34 +15,39 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: var(--basic-black);
+  width: 1200px;
+  margin: 0 auto;
+
 }
 
 /* Grid */
 
-.page {
+/*.page {
   height: 100%;
-}
+  padding: 0px 40px 0px 40px;
+}*/
 
-.page-body {
+/*.page-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
+}*/
+
 
 /* main-header */
 
 .main-header {
-  margin-bottom: 70px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
 
 /* Logo */
 .main-navigation-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-  justify-self: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Main navigation */
@@ -51,13 +56,24 @@ body {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-  display: grid;
+  position: relative;
 }
+.title-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
 .site-navigation {
   list-style: none;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  height: 56px;
+  padding-left: 50px;
 }
 
 .navigation-link {
@@ -110,24 +126,69 @@ line-height: 21px;
   color: var(--basic-black)
 }
 
+/* Features */
+
 .features-item--big{
 background-color: var(--extra-blue);
 }
 
 .features-list--inner{
 background-color: var(--basic-white);
+grid-column-start: 1;
+grid-column-end: 4;
+}
+
+.features-item:nth-child(1) img {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.features-item:nth-child(2) img {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .features-item--grey{
  background-color: var(--grey);
 }
 
+.grid-features-list{
+  display: grid;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.grid-features-img{
+  display: grid;
+  outline: 5px solid rgba(81, 255, 0, 0.952);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-features-item{
+
+
+
+  outline: 5px solid rgba(0, 153, 255, 0.952);
+
+}
+
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
+
 
 /* appointment */
 
+.appointment-flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .appointment-title{
   font-size: 30px;
   line-height: 24px;
@@ -140,6 +201,11 @@ background-color: var(--basic-white);
 
 /* Main footer */
 
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .main-footer a{
   text-decoration: none;

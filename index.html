@@ -17,62 +17,68 @@
         <img src="img/img/logo.svg" width="138" height="70" alt="Логотип сайта Sedona">
       </a>
       <ul class="site-navigation">
-        <li><a class="navigation-link" href="#">Информация</a></li>
-        <li><a class="navigation-link" href="#">Фото и Видео</a></li>
-        <li><a class="navigation-link" href="#">Карта Штата</a></li>
-        <li><a class="navigation-link" href="#">Гостиницы</a></li>
+        <li><a class="navigation-link flex-link-left" href="#">Информация</a></li>
+        <li><a class="navigation-link flex-link-left" href="#">Фото и Видео</a></li>
+        <li><a class="navigation-link flex-link-right" href="#">Карта Штата</a></li>
+        <li><a class="navigation-link flex-link-right" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main class="contanier">
-    <section class="Welcome-Sedona">
+    <section class="Welcome-Sedona ">
       <img src="img/img/background-photo.jpg" width="1200" height="509" alt="Прекрасный вид на скалистые горы">
       <h1>Sedona</h1>
     </section>
-    <h2 class="title title--main">Седона - небольшой городок в аризоне,заслуживающий большего!</h2>
-    <p class="text">Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
+    <div class="title-flex">
+      <h2 class="title title--main">Седона - небольшой городок в аризоне,заслуживающий большего!</h2>
+      <p class="text">Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
+    </div>
     <section class="features">
-      <ul class="features-list">
-        <li class="features-item features-item--big white">
-          <h3 class="title">Настоящий городок</h3>
-          <p class="text">Седона - не аттракцион для туристов,там течёт своя жизнь</p>
+      <ul class="features-list grid-features-list">
+        <li class="features-item features-item--big white grid-features-img">
+          <div>
+            <h3 class="title">Настоящий городок</h3>
+            <p class="text">Седона - не аттракцион для туристов,там течёт своя жизнь</p>
+          </div>
           <img src="img/img/image-1.jpg" width="800" height="256" alt="настоящий городок">
-          <ul class="features-list features-list--inner black">
-            <li>
+          <ul class="features-list features-list--inner black grid-features-list">
+            <li class="features-item grid-features-item">
               <h4 class="title">Жильё</h4>
               <p class="text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
             </li>
-            <li>
+            <li class="features-item grid-features-item">
               <h4 class="title">Еда</h4>
               <p class="text">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
             </li>
-            <li>
+            <li class="features-item grid-features-item">
               <h4 class="title">Сувениры</h4>
               <p class="text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
-        <li class="features-item features-item--big white">
+        <li class="features-item features-item--big white grid-features-img">
           <img src=" img/img/image-2.jpg" width="800" height="256" alt="мост дьявола">
-          <h3 class="title">Там есть мост дьявола</h3>
-          <p class="text">Да,по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div>
+            <h3 class="title">Там есть мост дьявола</h3>
+            <p class="text">Да,по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
-        <li class="features-item features-item--grey">
+        <li class="features-item features-item--grey grid-features-item">
           <h3 class="title">Небольшая площадь</h3>
           <p class="text">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="features-item features-item--grey">
+        <li class="features-item features-item--grey grid-features-item">
           <h3 class="title">Красивая дорога</h3>
           <p class="text">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li class="features-item features-item--grey">
+        <li class="features-item features-item--grey grid-features-item">
           <h3 class="title">Мало туристов</h3>
           <p class="text">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
   </main>
-  <section class="appointment">
+  <section class="appointment appointment-flex">
     <h2 class="appointment-title">Заинтересовались?</h2>
     <p class="appointment-text">Укажите в предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
       седоне</p>
