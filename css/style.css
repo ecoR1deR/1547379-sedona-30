@@ -20,19 +20,6 @@ body {
 
 }
 
-/* Grid */
-
-/*.page {
-  height: 100%;
-  padding: 0px 40px 0px 40px;
-}*/
-
-/*.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}*/
 
 
 /* main-header */
@@ -167,11 +154,7 @@ grid-column-end: 4;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-features-item{
-
-
-
-  outline: 5px solid rgba(0, 153, 255, 0.952);
-
+ outline: 5px solid rgba(0, 153, 255, 0.952);
 }
 
 .features-list {
@@ -221,7 +204,7 @@ align-items: center;
   list-style: none;
   }
 
-  .social-button:link{
+.social-button:link{
     background: var(--extra-blue);
   }
 
@@ -229,42 +212,42 @@ align-items: center;
   background: #5496BD;
   }
 
- .social-button:hover{
+.social-button:hover{
     background: #669EC0;
   }
 
- .social-button:active{
+.social-button:active{
     background: #5496BD;
   }
 
-  .footer-copyright-link:link{
+.footer-copyright-link:link{
     color: #231F20;
   }
-  .footer-copyright-link:active{
+.footer-copyright-link:active{
     color: #BDBBBC;
     }
 
-  .footer-copyright-link:visited {
+.footer-copyright-link:visited {
     color: #231F20;
   }
 
-  .footer-copyright-link:hover{
+.footer-copyright-link:hover{
     color:var(--extra-blue)
   }
 
  /*Catalog*/
 
- .main-travel {
+.main-travel {
    list-style: none;
    padding: 0;
  }
 
- .main-travel-item {
+.main-travel-item {
    display: flex;
    border-top: #5496BD solid 1px ;
    border-bottom: #5496BD solid 1px;
    padding: 30px 73px;
-   
+
  }
 
 .main-travel-stars {
@@ -302,18 +285,37 @@ align-items: center;
   margin-bottom: 7px;
 }
 
+.main-sorting-title {
+  display: flex;
+  padding: 30px 73px;
+  border-top: blue solid 1px;
+  border-bottom: blue solid 1px;
+  align-items: center;
+}
+.main-sorting-item{
+  display: flex;
+}
+
+.sorting-arrow{
+  display: flex;
+  margin-left: auto;
+}
 .sorting {
  font-size: 12px;
  line-height: 18px;
  list-style: none;
-
- }
-
+}
+.sorting-head {
+  margin-left: 40px;
+}
+.sorting-type {
+  margin-left: 32px;
+}
 .sorting-link{
  text-decoration: none;
  color: var(--basic-black);
  opacity: 0.3;
- }
+}
 
 .sorting-link:link {
 color: var(--basic-black);
@@ -330,7 +332,9 @@ opacity: 1;
 }
 
 .sorting-active {
-  color: var(--extra-blue)
+  color: var(--extra-blue);
+  margin-left: 40px;
+
 }
 
 .button-main {
@@ -354,7 +358,7 @@ opacity: 1;
 
 .text-frame {
   color: #666666;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   padding: 3px;
   padding-left: 15px;
   padding-right: 12px;
