@@ -73,7 +73,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   height: 56px;
-  padding-left: 50px;
+  padding: 0 72px;
 }
 
 .navigation-link {
@@ -256,17 +256,57 @@ align-items: center;
 
  .main-travel {
    list-style: none;
-   }
+   padding: 0;
+ }
 
- .travel-title {
+ .main-travel-item {
+   display: flex;
+   border-top: #5496BD solid 1px ;
+   border-bottom: #5496BD solid 1px;
+   padding: 30px 73px;
+   
+ }
+
+.main-travel-stars {
+  list-style: none;
+  display: flex;
+}
+
+.main-travel-rating {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-travel-img {
+  margin-right:  29px;
+}
+
+.main-travel-type {
+  display: flex;
+  margin-bottom: 15px;
+  }
+
+.main-travel-type .text {
+  margin: 0;
+}
+.main-travel-type .text:first-child {
+  width: 120px;
+  margin-right: 10px;
+}
+.travel-title {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 7px;
 }
 
 .sorting {
  font-size: 12px;
  line-height: 18px;
  list-style: none;
+
  }
 
 .sorting-link{
@@ -293,22 +333,23 @@ opacity: 1;
   color: var(--extra-blue)
 }
 
-.button-1 {
+.button-main {
   color: var(--basic-white);
   background-color: var(--extra-blue);
   padding: 3px;
   padding-left: 17px;
   padding-right: 16px;
   text-decoration: none;
+  font-weight: 700;
 }
 
-.button-2 {
-  color: var(--basic-white);
+.main-travel-button {
+  display: flex;
+}
+
+.button-main-brown {
+ margin-left: 10px;
   background-color: var(--basic-brown);
-  padding: 3px;
-  padding-left: 16px;
-  padding-right: 17px;
-  text-decoration: none;
 }
 
 .text-frame {
@@ -317,37 +358,38 @@ opacity: 1;
   padding: 3px;
   padding-left: 15px;
   padding-right: 12px;
+  margin: 0;
 }
 
-.button-1:link{
+.button-main:link{
   background: #81B3D2;
 }
 
-.button-1:visited {
+.button-main:visited {
   background: #81B3D2;
 }
 
-.button-1:hover {
+.button-main:hover {
   background: #669EC0;
 }
 
-.button-1:active {
+.button-main:active {
   background: #5496BD;
 }
 
-.button-2:link{
+.button-main-brown:link{
   background: #766357;
 }
 
-.button-2:visited {
+.button-main-brown:visited {
   background: #766357;
 }
 
-.button-2:hover {
+.button-main-brown:hover {
   background: #604E43;
 }
 
-.button-2:active {
+.button-main-brown:active {
   background: #503E33;
 }
 
