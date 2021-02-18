@@ -260,6 +260,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .main-travel-img {
@@ -294,17 +295,23 @@ align-items: center;
 }
 .main-sorting-item{
   display: flex;
+  width: 100%;
 }
 
+
 .sorting-arrow{
+  list-style: none;
   display: flex;
-  margin-left: auto;
+  align-items: flex-end;
 }
+
+
 .sorting {
  font-size: 12px;
  line-height: 18px;
  list-style: none;
 }
+
 .sorting-head {
   margin-left: 40px;
 }
