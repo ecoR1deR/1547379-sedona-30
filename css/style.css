@@ -20,7 +20,18 @@ body {
 
 }
 
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* main-header */
 
@@ -49,6 +60,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 216px;
 
 }
 .site-navigation {
@@ -89,6 +102,8 @@ opacity: 0.3;
 
 .title--main{
 line-height: 26px;
+text-align: center;
+width: 470px;
 }
 
 .text--main {
@@ -202,9 +217,24 @@ align-items: center;
 
 .footer-social {
   list-style: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
 
-.social-button:link{
+.social-button {
+  background-color: var(--extra-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
+
+.social-button:active path {
+  opacity: 0.3 ;
+}
+.social-button:link {
     background: var(--extra-blue);
   }
 
@@ -220,21 +250,29 @@ align-items: center;
     background: #5496BD;
   }
 
-.footer-copyright-link:link{
-    color: #231F20;
-  }
-.footer-copyright-link:active{
-    color: #BDBBBC;
-    }
+.footer-copyright-link:link path{
+  fill: var(--extra-light-dark);
+}
 
-.footer-copyright-link:visited {
-    color: #231F20;
-  }
+.footer-copyright-link:active path{
+  fill: #BDBBBC;
+}
 
-.footer-copyright-link:hover{
-    color:var(--extra-blue)
-  }
+.footer-copyright-link:visited path {
+  fill: #BDBBBC;
+}
 
+.footer-copyright-link:hover path{
+  fill: var(--extra-blue);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 197px;
+}
+}
  /*Catalog*/
 
 .main-travel {
@@ -424,3 +462,54 @@ color: var(--basic-black);
   color: var(--basic-black);
   opacity: 0.3;
 }
+
+/* background elements */
+
+.Welcome-Sedona::before{
+  content: "";
+  background-image: url("../img/img/welcome1.svg") , url("../img/img/Shape.svg");
+  background-repeat: no-repeat;
+  background-position: 371px 77px, 0 455px;
+  position: absolute;
+  width: 1200px;
+  height: 509px;
+  }
+
+.list-icon::before {
+  content: "";
+  background-image: url("../img/icon/home.svg"), url("../img/icon/burger.svg"), url("../img/icon/box.svg");
+  background-repeat: no-repeat;
+  background-position: 162px 60px, 562px 60px, 968px 60px;
+  position: absolute;
+  width: 1200px;
+  height: 330px;
+}
+
+.features-height {
+  padding: 137px 57px 82px 57px;
+}
+
+.title-number {
+  margin-top: 47px;
+  max-width: 160px;
+  width: 400px;
+  margin-left: 122px;
+}
+
+.list-number {
+  margin-top: 25px;
+}
+
+.text-number {
+  margin-top: 23px;
+  padding-bottom: 54px;
+
+  max-width: 298px;
+  width: 300px;
+  margin-left: 50px;
+
+}
+
+
+
+
