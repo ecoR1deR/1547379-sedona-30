@@ -138,6 +138,7 @@ background-color: var(--extra-blue);
 background-color: var(--basic-white);
 grid-column-start: 1;
 grid-column-end: 4;
+height: 330px;
 }
 
 .features-item:nth-child(1) img {
@@ -151,7 +152,9 @@ grid-column-end: 4;
 
 .features-item--grey{
  background-color: var(--grey);
+ height: 256px;
 }
+
 
 .grid-features-list{
   display: grid;
@@ -203,6 +206,8 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 120px;
+  align-items: center;
 }
 
 .main-footer a{
@@ -213,6 +218,7 @@ align-items: center;
 
 .footer-contacts{
   font-weight: bold;
+  font-style: inherit;
 }
 
 .footer-social {
@@ -475,41 +481,48 @@ color: var(--basic-black);
   height: 509px;
   }
 
-.list-icon::before {
+  .list-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.list-icon-home::before {
   content: "";
-  background-image: url("../img/icon/home.svg"), url("../img/icon/burger.svg"), url("../img/icon/box.svg");
-  background-repeat: no-repeat;
-  background-position: 162px 60px, 562px 60px, 968px 60px;
+  background-image: url("../img/icon/home.svg");
   position: absolute;
-  width: 1200px;
   height: 330px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: 162px 37px;
 }
 
-.features-height {
-  padding: 137px 57px 82px 57px;
+.list-icon-food::before {
+  content: "";
+  background-image: url("../img/icon/burger.svg");
+  position: absolute;
+  height: 330px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: 162px 37px;
+}
+
+.list-icon-presents::before {
+  content: "";
+  background-image: url("../img/icon/box.svg");
+  position: absolute;
+  height: 330px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: 170px 37px;
 }
 
 .title-number {
-  margin-top: 47px;
-  max-width: 160px;
-  width: 400px;
-  margin-left: 122px;
-}
-
-.list-number {
-  margin-top: 25px;
+  padding-left: 124px;
+  padding-right: 125px;
 }
 
 .text-number {
-  margin-top: 23px;
-  padding-bottom: 54px;
-
-  max-width: 298px;
-  width: 300px;
-  margin-left: 50px;
-
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-
-
-
