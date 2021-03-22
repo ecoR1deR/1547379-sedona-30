@@ -2,21 +2,20 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: local("Fonts"),
-  url("../fonts/PTSans.woff2") format("woff2");
-url("../fonts/PTSans.woff") format("woff");
+  src: local("Fonts"), url("../fonts/PTSans.woff2") format("woff2");
+  url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("Fonts"),
-  url("../fonts/PTSans-Bold.woff2") format("woff2");
-url("../fonts/PTSans-Bold.woff") format("woff");
+  src: local("Fonts"), url("../fonts/PTSans-Bold.woff2") format("woff2");
+  url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+
 
 /* Variables */
 
@@ -27,7 +26,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --basic-light: #F2F2F2;
   --basic-light-gray: #EEEEEE;
   --basic-dark-gray: #666666;
-
   --special-blue: #81b3d2;
   --special-blue-extra: #669EC0;
   --special-blue-dark: #5496BD;
@@ -47,16 +45,17 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-white--footer: rgba(255, 255, 255, .9);
   --special-body--shadow: rgba(0, 1, 1, .2);
   --special-form--shadow: rgba(0, 1, 1, .15);
-
   --background-image-pink: #CD5C5C;
   --background-image-green: #2E8B57;
   --background-image-blue: #5F9EA0;
   --background-image-red: #FFA07A;
   --background-image-brown: #A0522D;
-  --background-map-green: rgb(143,188,143);
+  --background-map-green: rgb(143, 188, 143);
 }
 
+
 /* Global */
+
 .page {
   height: 100%;
   background-color: var(--basic-light);
@@ -109,7 +108,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   height: auto;
 }
 
-.style-none{
+.style-none {
   padding: 0;
   list-style: none;
 }
@@ -141,6 +140,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   transform: translate(-50%);
 }
 
+
 /* Main navigation */
 
 .main-navigation {
@@ -156,19 +156,23 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   padding: 15px 72px;
   box-sizing: border-box;
 }
-.site-item:nth-child(4n+1){
+
+.site-item:nth-child(4n+1) {
   width: 228px;
   text-align: left;
 }
-.site-item:nth-child(4n+2){
+
+.site-item:nth-child(4n+2) {
   width: 228px;
   text-align: left;
   margin-right: 144px;
 }
-.site-item:nth-child(4n+3){
+
+.site-item:nth-child(4n+3) {
   width: 228px;
   text-align: right;
 }
+
 .site-item:nth-child(4n+4) {
   width: 228px;
   text-align: right;
@@ -229,6 +233,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 .promo-text {
   margin: 0;
 }
+
 
 /* Features */
 
@@ -308,6 +313,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
 .feature-item-mini {
   padding: 133px 0 80px;
 }
@@ -358,6 +364,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   padding-left: 2px;
 }
 
+
 /*Search*/
 
 .search-hotels {
@@ -406,7 +413,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 .search-input-data {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26;
@@ -423,7 +430,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 .search-input-data::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -481,7 +488,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 .search-input-number {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -530,6 +537,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 .minus {
   outline: none;
 }
+
 .plus:hover path {
   fill: var(--basic-black);
 }
@@ -545,6 +553,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 .minus:hover rect {
   fill: var(--basic-black);
 }
+
 .minus:focus rect {
   fill: var(--basic-black);
 }
@@ -600,19 +609,26 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 .modal-error {
   animation: shake 0.6s;
 }
+
+
 /*Map*/
+
 .map {
   width: 1199px;
   height: 594px;
   background-color: var(--background-map-green);
 }
+
 .map-iframe {
   border: 1px solid var(--basic-black);
 }
+
 .map-img {
   width: 1199px;
   height: 594px;
 }
+
+
 /*Footer*/
 
 .main-footer {
@@ -707,6 +723,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   fill: var(--special-blue-gray);
 }
 
+
 /* Стилизация внутренней страницы*/
 
 .filters {
@@ -766,7 +783,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:focus + label {
+.filter-input-checkbox:focus+label {
   outline: 2px solid var(--special-blue);
 }
 
@@ -860,7 +877,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 .price-number {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   width: 35px;
@@ -928,6 +945,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   height: 5px;
   border: 9px solid var(--basic-white);
 }
+
 .toggle:focus {
   width: 5px;
   height: 5px;
@@ -1158,7 +1176,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1166,7 +1183,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   90% {
     transform: translateX(-2px);
   }
-
   20%,
   40%,
   60%,
